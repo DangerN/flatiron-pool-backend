@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_07_042636) do
+ActiveRecord::Schema.define(version: 2019_06_07_051941) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "stat_blocks", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "display_name"
+    t.string "job_title"
+    t.string "job_description"
+    t.date "hired"
+    t.date "graduated"
+    t.boolean "in_deadpool"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_stat_blocks_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -29,4 +42,5 @@ ActiveRecord::Schema.define(version: 2019_06_07_042636) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "stat_blocks", "users"
 end
