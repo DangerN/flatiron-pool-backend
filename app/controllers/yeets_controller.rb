@@ -4,7 +4,6 @@ class YeetsController < ApplicationController
   # GET /yeets
   def index
     @yeets = Yeet.all
-
     render json: @yeets
   end
 

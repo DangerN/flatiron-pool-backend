@@ -1,24 +1,11 @@
-# README
+# FlatironPool API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend for FlatironPool, a place to wager on the success and failure of your friends and colleagues!
 
-Things you may want to cover:
+## The API
 
-* Ruby version
+It's not in great shape right now 😐
 
-* System dependencies
+## The Dream
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I think tracking the people in my cohort will be a fun way to stay in touch after graduation. Participation in **FlatironPool** is voluntary, of course.
